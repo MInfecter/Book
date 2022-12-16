@@ -1,0 +1,941 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "AvCaA",
+				"abbreviation": "AvCA",
+				"full": "Class Arbiter",
+				"authors": [
+					"Avaricium"
+				],
+				"convertedBy": [
+					"Infecter"
+				],
+				"version": "1.1.1",
+				"color": "6A5ACD",
+				"url": "https://www.gmbinder.com/share/-MC-QMWrTCps6hPrUxQl",
+				"targetSchema": "1.2"
+			}
+		],
+		"optionalFeatureTypes": {
+			"BS": "Blood Sacraments",
+			"VA": "Vermillion assault"
+		},
+		"dateAdded": 1671157638,
+		"dateLastModified": 1671157638,
+		"_dateLastModifiedHash": "ef8048de6b"
+	},
+	"class": [
+		{
+			"name": "Arbiter",
+			"source": "AvCA",
+			"classFeatures": [
+				{
+					"classFeature": "Arbiter Ascension|Arbiter|AvCA|1|AvCA",
+					"gainSubclassFeature": true
+				},
+                "Ruincrest|Arbiter|AvCA|1|AvCA",
+				"Unyielding Preeminence|Arbiter|AvCA|2|AvCA",
+				"Martial Acumen|Arbiter|AvCA|3|AvCA",
+				{
+					"classFeature": "Arbiter Ascension|Arbiter|AvCA|3|AvCA",
+					"gainSubclassFeature": true
+				},
+				"Ability Score Improvement|Arbiter|AvCA|4|AvCA",
+				"Extra Attack|Arbiter|AvCA|5|AvCA",
+				{
+					"classFeature": "Arbiter Ascension|Arbiter|AvCA|6|AvCA",
+					"gainSubclassFeature": true
+				},
+				"Ruinous Augury|Arbiter|AvCA|7|AvCA",
+				"Ability Score Improvement|Arbiter|AvCA|8|AvCA",
+				"Frightful Crest|Arbiter|AvCA|9|AvCA",
+				{
+					"classFeature": "Arbiter Ascension|Arbiter|AvCA|10|AvCA",
+					"gainSubclassFeature": true
+				},
+				"Unyielding Preeminence (2)|Arbiter|AvCA|11|AvCA",
+				"Ability Score Improvement|Arbiter|AvCA|12|AvCA",
+                "Greater Martial Acumen|Arbiter|AvCA|13|AvCA",
+				"Martial Acumen (2)|Arbiter|AvCA|13|AvCA",
+				{
+					"classFeature": "Arbiter Ascension|Arbiter|AvCA|14|AvCA",
+					"gainSubclassFeature": true
+				},
+				"Seeker's Sanction|Arbiter|AvCA|15|AvCA",
+				"Ability Score Improvement|Arbiter|AvCA|16|AvCA",
+				"Otherworldly Vengeance|Arbiter|AvCA|17|AvCA",
+				{
+					"classFeature": "Arbiter Ascension|Arbiter|AvCA|18|AvCA",
+					"gainSubclassFeature": true
+				},
+                "Ability Score Improvement|Arbiter|AvCA|19|AvCA",
+				"Calamitous Warstorm|Arbiter|AvCA|20|AvCA"
+			],
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"str",
+				"con"
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium"
+				],
+				"weapons": [
+					"simple",
+					"martial"
+				],
+				"skills": [
+					{
+						"choose": {
+							"from": [
+                                "acrobatics",
+								"arcana",
+								"athletics",
+                                "insight",
+								"intimidation",
+								"investigation",
+								"perception",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				]
+			},
+			"startingEquipment": {
+				"default": [
+					"(a) a {@item greataxe|phb}, (b) {@item greatsword|PHB}, or a (c) {@item maul|PHB}",
+					"(a) two {@item handaxe|PHB|handaxes} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"{@item hide armor|PHB}, an {@item explorer's pack|PHB}, and four {@item javelin|PHB|javelins}"
+				],
+				"additionalFromBackground": true,
+				"goldAlternative": "{@dice 2d4 × 10|2d4 × 10|Starting Gold}",
+				"defaultData": [
+					{
+						"a": [
+							"greataxe|phb"
+						],
+						"b": [
+							"greatsword|PHB"
+						],
+						"c": [
+							"maul|PHB"
+						]
+					},
+					{
+						"a": [
+							{
+								"item": "handaxe|phb",
+								"quantity": 2
+							}
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"_": [
+							"hide armor|phb",
+							"explorer's pack|phb",
+							{
+								"item": "javelin|phb",
+								"quantity": 4
+							}
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"con":13,
+					"or":[
+						{
+							"str": 13,
+							"dex": 13
+						}
+					]                                       
+				},
+				"proficienciesGained": {
+					"skills": [
+						{
+							"athletics": true
+						}
+					],
+					"weapons": [
+						"simple",
+						"martial"
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Marked Bonus",
+						"Marked Penalty"
+					],
+					"rows": [
+						[
+							"+2",
+							"-3"
+						],
+						[
+                            "+2",
+							"-3"
+						],
+						[
+							"+3",
+							"-3"
+						],
+						[
+							"+3",
+							"-4"
+						],
+						[
+							"+3",
+							"-4"
+						],
+						[
+							"+3",
+							"-4"
+						],
+						[
+							"+4",
+							"-4"
+						],
+						[
+							"+4",
+							"-5"
+						],
+						[
+							"+4",
+							"-5"
+						],
+						[
+							"+4",
+							"-5"
+						],
+						[
+							"+5",
+							"-5"
+						],
+						[
+							"+5",
+							"-5"
+						],
+						[
+							"+5",
+							"-5"
+						],
+						[
+							"+5",
+							"-6"
+						],
+						[
+							"+6",
+							"-6"
+						],
+						[
+							"+6",
+							"-6"
+						],
+						[
+							"+6",
+							"-6"
+						],
+						[
+							"+6",
+							"-6"
+						],
+						[
+							"+7",
+							"-6"
+						],
+						[
+							"+7",
+							"-6"
+						]
+					]
+				}
+			],
+			"fluff": [
+				{
+					"type": "section",
+					"name": "Arbiter",
+					"source": "AvCA",
+					"page": 1,
+					"entries": [
+						"Their moniker does them no justice. When one of their kind arrives on the battlefield, the fates of those they have chosen are sealed in stone - what awaits their quarry is either death, or excruciating pain. They are the hands of judgment and to face one without dread in your heart would be wrong. ─ ?",
+						"Descending the steps to an arena, a human eyes the foe across from her, ready to battle to the death. She waves to them not in greeting, but in preparation for her victory - by the time her hand returns to her side, her prey has already been marked. As they meet and draw weapons, she begins her furious onslaught that astounds her opponent; making quick work of them, all that remains is a grisly spectacle.",
+						"A dragonborn recoils as his mark, clad in steel from head to toe, strikes him hard. If iron cannot rend his prey, then he will roast them in their own armor. Raising both of his arms, he summons a fiery sword and swings it, drowning his prey in a deluge of fire.",
+						"With no option but to retreat from a spellcaster's arcane barrage, an elf dances in sync with the caster's spells. But they cannot do it forever; in a desperate act she marks her attacker with a tooth-shaped crest. At the last moment this act gives her the strength she needs to avoid a fireball that streaks past her.",
+                        "No matter their race or upbringing, arbiters are united by the unique ability to mark their prey with a primeval power, which allows them to dedicate themselves to a single foe, and an unnatural martial prowess, evoking dread in those they've marked for defeat. As judges - be it self-proclaimed or chosen - they mete out justice as they see fit, one death or triumph at a time.",
+						{
+							"type": "entries",
+							"name": "An Ancient Epithet",
+							"page": 1,
+							"entries": [
+								"Before they could name themselves, those who witnessed the unfathomable might they possessed gave them their title first. With powers beyond comprehending, they are walking myths rumored to slay all who would cross them in their journey for glory or redemption.",
+                                "Arbiters build upon the unique ability to brand the living (or anything capable of moving) with a crest that allows them to focus on a single enemy in combat. One marked with their crest knows they are facing the wrath of an executioner who will not yield until either of them falls.",
+                                "An arbiter is an anomaly that can occur anywhere - from royalty, to your average soldier, or even folk with nothing in their name; however, an arbiter's power most often awakens in those with an affinity for martial combat and an insatiable desire for greatness, or some cases, repentance. Such might awakens very rarely, and even those who gain the powers of an arbiter rarely awaken them to their fullest extent."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "The Primordial Crest",
+							"page": 2,
+							"entries": [
+								"Arbiters wield the unique ability to mark creatures with a special crest, whose properties outside of combat are largely unknown. Few know the extent of the origins of arbiters and their powers, and of the few who do know the source of them and the powers they wield, even fewer would part with such wisdom. Was it something so paramount that fanned the fires of their existence, or merely an event that is so insignificant that it wasn't worth etching their beginnings into the annals of history?",
+								"This unique power, despite its historical insignificance, is one that has been studied with no fruit borne from its efforts. Because of the scarcity of arbiters, it is very difficult to gauge what arbiters are truly capable of. Those born with the spark of an arbiter or inherit it can call upon its powers with a flick of their wrist or with careful practice. Meanwhile, those who attempt to emulate the powers of an arbiter fail spectacularly or produce no results whatsoever."
+							]
+						},
+                        {
+							"type": "entries",
+							"name": "Hand of Judgment",
+							"page": 2,
+							"entries": [
+								"The killing gaze of an arbiter is unmistakable. In combat, they exude an aura that none can miss - the shadow of death that's on the horizon. Due to their prowess in combat (either intended or not) and the tales that follow them, they tend to fall into one of two camps: executioners that act in good will and carry out the words of judges, or renegades who ignore the law and kill and maim as a means to an end.",
+								"Not all arbiters use the power bestowed upon them. Why does yours use the primordial gift they carry? Does it allow them to flaunt their martial prowess, make a living, or wade through life one day at a time? Does your character use this gift to achieve their goals as best as they can? Or do they try to live as monotonously as possible, striving to be better not with this entreatment, but with their own hands?"
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating your Arbiter",
+							"page": 2,
+							"entries": [
+								"When you are creating your arbiter, consider these two specific elements: the origin of the spark that has given them their powers and how it has manifested, and how they intend to use this primeval brilliance. Have you accepted this power, or do you resent it for the expectations it has laid upon you?",
+								"Arbiters are known for their martial prowess, but that doesn't always come naturally. You might've enjoyed years of formal training in an army or militia, or perhaps you studied under the tutelage of a mentor keen on sharpening the skills you had at a young age.",
+                                "After adventuring for some time, all arbiters must answer the call - to be a hand of judgment, or a renegade with rising ambitions and their own definition of judgment. Is the spark within them a festering curse that will only make you more ruthless as time passes, or is it a blessing that allows them to execute those aligned with forces that would watch the world burn? You may possibly divine it as an instrument that has allowed you to do as you see fit."
+							]
+						},
+                        {
+							"type": "inset",
+							"name": "Quick Build",
+							"entries": [
+								"You can create an arbiter by following these suggestions. First, Constitution should be your character's highest ability score, followed by Strength or Dexterity (depending on what kind of martial character you want). Then choose the soldier background."
+							]
+						},
+                        {
+							"type": "entries",
+							"name": "Unfathomable Whimsy",
+							"page": 2,
+							"entries": [
+								"No two arbiters act the same, and rarely do two share the same origin. To add some texture to your arbiter, consider quirks that set them apart from others - for example you may despise the nobility you seek to become, or you try to refrain from saying the names of others. They have no effect on the game, but your character might become irritated or upset if their quirk is bothered. They are a great role-playing tool to add character to the game. You can roll from or pick from the table below, or design your own quirks. Try to aim for at least two quirks to give your character, so it is more likely for them to come into play."
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"classFeature": [
+		{
+			"name": "Arbiter Ascension",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 3,
+			"level": 1,
+			"entries": [
+				"Choose an ascension, which details the source of your power and shapes the path you take as an arbiter; a diverse array of ascensions are detailed at the end of the class description. Your chosen ascension grants you features when you choose it at 1st level and again at 3rd, 6th, 10th, 14th, and 18th level.",
+				{
+                    "type": "inset",
+                    "name": "Saving Throws",
+                    "entries": [
+                        "Some arbiter features, in addition to features granted by your chosen ascension, force you to make an attack roll and/or the target to make a saving throw. Constitution is the modifier for these abilities, as you draw primeval energy from yourself to fuel them. You use your Constitution modifier to set the save DC for your arbiter features or when making an attacking roll with one.",
+                        {
+							"type": "abilityDc",
+							"name": "Arbiter",
+							"attributes": [
+								"con"
+							]
+						},
+                        {
+							"type": "abilityAttackMod",
+							"name": "Spell",
+							"attributes": [
+								"con"
+							]
+						},
+                        "Because of the occult nature of an arbiter's powers, they are beyond the scope of the Weave and thus immune to effects that cancel or suppress magic unless stated otherwise. They are not magical, however; if an arbiter feature deals slashing damage, it is nonmagical unless stated otherwise."
+                    ]
+                }
+			]
+		},
+		{
+			"name": "Ruincrest",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 3,
+			"level": 1,
+			"entries": [
+				"In combat, arbiters can brand their foes with ruincrests, brands of primordial power, to hone their focus to inhuman levels. Owing to their nature, ruincrests do not abide by the Weave - antimagic field, dispel magic, and other effects like them have no effect on ruincrests.",
+                "Each arbiter has a unique, stylized ruincrest; for example, a dragonborn arbiter may have a sharp claw or other draconic feature for their crest, while the crest of an arbiter initiated in magic might be the symbol of a school of magic they use.",
+                "You can use your bonus action to brand a creature that you can see within 30 feet of you with a ruincrest for 10 minutes. You can't use this feature if a creature is already branded with your ruincrest. A ruincrest you imprint on a creature disperses when any of these conditions are met:",
+                {
+					"type": "list",
+					"items": [
+						"You finish a rest or roll initiative.",
+						"You drop to 0 hit points, die, or are incapacitated.",
+						"A creature with your ruincrest drops to 0 hit points.",
+						"An arbiter feature indicates that you brand a creature.",
+                        "Divine intervention or a wish spell removes the brand.",
+                        "A creature with your ruincrest moves to another plane of existence, to which you are alerted, but have no grasp on their new location."
+					]
+				},
+                "While a creature is marked with your ruincrest, you gain a +2 bonus to all of the following. The bonus increases as you gain more levels in this class, as shown in the Marked Bonus column of the Arbiter table.",
+                {
+					"type": "list",
+					"items": [
+                        "Strength checks you make against that creature",
+                        "Dexterity checks you make against that creature.",
+                        "Attack and damage rolls you make against that creature.",
+                        "Saving throws you make against spells and other effects that originate from that creature.",
+                        "The save DC for your arbiter features that creature is forced to make saving throws against. If other creatures are forced to make a saving throw for the same feature, only the branded creature rolls against an increased DC."
+					]
+				},
+                "As an inverse side effect of marking a creature, you don't add your proficiency bonus and suffer a -3 penalty to the following rolls you make while a creature is branded with your ruincrest. The penalty to these increases as you gain more levels as an arbiter, as shown in the Marked Penalty column of the Arbiter table.",
+                {
+					"type": "list",
+					"items": [
+                        "Saving throws you make for spells and effects that don't originate from the creature branded with your ruincrest.",
+                        "Attack and damage rolls you make for attacks you make against creatures that aren't branded with your ruincrest."
+					]
+				},
+                "When fighting with two separate weapons, the weapon in your off hand gains no benefits on attacks you make against a creature branded with your ruincrest, but still suffers from penalties to attack and damage rolls made against creatures that aren't marked with your ruincrest."
+			]
+		},
+		{
+			"name": "Unyielding Preeminence",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 5,
+			"level": 2,
+			"entries": [
+				"Beginning at 2nd level, your Marked Penalty is reduced by 1 as long as you are missing at least half of your hit points. At 11th level, the penalty is reduced by 2 instead.",
+				{
+					"type": "entries",
+					"name": "Critical Mark",
+					"page": 5,
+					"entries": [
+						"Attacks you make against a creature that's marked with your ruincrest score a critical hit on a roll of 19 or 20.", 
+                        "Starting at 13th level, they instead score a critical hit on a roll of 18-20 against creatures marked with your ruincrest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Evasive Duelist",
+					"page": 5,
+					"entries": [
+						"Your Armor Class is increased by 2.", 
+                        "Beginning at 13th level, you can nimbly dodge out of the way of certain area effects, such as an ancient red dragon’s fiery breath or an ice storm spell. Whenever you're subjected to an effect that allows you to make a Dexterity saving throw to take half as much damage, you instead take no damage if you succeed on the saving throw, or half damage if you fail. You don't gain any of these benefits if you're wielding more than one weapon or a shield."
+					]
+				},
+                {
+                    "type": "entries",
+					"name": "Great Weapon Fighting",
+					"page": 5,
+					"entries": [
+                        "You can't make weapon attacks with disadvantage when the target of those attacks is a creature that's marked with your ruincrest and you're wielding a weapon with two hands. The weapon must have the two-handed or versatile property for you to gain this benefit.",
+                        "Beginning at 13th level, whenever you make a melee weapon attack against a creature that isn't branded with your ruincrest, you don't subtract your Marked Penalty from the attack roll and damage. The weapon must have the two-handed or versatile property for you to gain this benefit."
+                    ]    
+                },
+                {
+                    "type": "entries",
+					"name": "Hunter's Ward",
+					"page": 5,
+					"entries": [
+                        "Damage dealt to you by a creature that's marked with your ruincrest is reduced by 1d6 (to a minimum of 1 damage). The damage is reduced by 2d6 instead beginning at 13th level."
+                    ]    
+                },
+                {
+                    "type": "entries",
+					"name": "Promethean Strength",
+					"page": 5,
+					"entries": [
+                        "You are capable of using weapons with the heavy or two-handed properties as though they had the versatile property. When doing so, you can't hold a weapon in your other hand, but you can still use a shield, provided you have proficiency with them.",
+                        "Beginning at 13th level, you can use two-weapon fighting when the melee weapon in your main hand has the heavy or two-handed property and the melee weapon in your off hand has the light property."
+                    ]    
+                },
+                {
+                    "type": "entries",
+					"name": "Seeker's Alacrity",
+					"page": 5,
+					"entries": [
+                        "You learn how to perform the somatic components of your arbiter features and spells, even as you're holding a weapon in one hand and a shield in the other. Starting at 13th level, you can't be knocked prone while you're wielding a shield."
+                    ]    
+                },
+                {
+                    "type": "entries",
+					"name": "Strider",
+					"page": 5,
+					"entries": [
+                        "As long as a creature marked with your ruincrest is at least 30 feet away from you, your movement speed is increased by 10 feet. At 13th level, this increases to 20 feet, and any movement you spend to move closer to a creature marked with your ruincrest is unaffected by difficult terrain."
+                    ]    
+                },
+                {
+                    "type": "entries",
+					"name": "Two Weapon Fighting",
+					"page": 5,
+					"entries": [
+                        "You learn how to perform the somatic components of your arbiter features and spells, even as you're holding a weapon in both of your hands. Additionally, you learn how to draw or stow two one-handed weapons when you would normally be able to draw or stow only one.",
+                        "Beginning at 13th level, you can use two-weapon fighting when the one handed melee weapons you're wielding have either the light or versatile property, and the melee weapon in your off hand now benefits from your Marked Bonus on attack and damage rolls you make with it against creatures that are marked with your ruincrest."
+                    ]    
+                }
+			]
+		},
+        {
+			"name": "Arbiter Ascension",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 3,
+			"level": 3,
+			"entries": [
+				"At 3th level, you gain a feature from your Arbiter's Ascension"
+			]
+		},
+		{
+			"name": "Martial Acumen",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 5,
+			"level": 3,
+			"entries": [
+				"When you reach 3rd level, you acquire a talent unique to arbiters which bolsters your skills in combat. Choose one of the following. You can't take a Martial Acumen feature more than once. Upon reaching 13th level, you gain an additional Martial Acumen, then your chosen acumens grant you extra features."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 4,
+			"entries": [
+				"When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or two ability scores by 1. As normal, you can't increase one of your ability scores above 20 using this feature."
+			]
+		},
+		{
+			"name": "Extra Attack",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 5,
+			"entries": [
+				"Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack|PHB} action on your turn."
+			]
+		},
+        {
+			"name": "Arbiter Ascension",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 3,
+			"level": 6,
+			"entries": [
+				"At 6th level, you gain a feature from your Arbiter's Ascension"
+			]
+		},
+		{
+			"name": "Ruinous Augury",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 7,
+			"entries": [
+				"Beginning at 7th level, weapon attacks you make and arbiter features you use against a creature that is branded with your ruincrest count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage."
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 8,
+			"entries": [
+				"When you reach 8th level you can increase one ability score of your choice by 2, or two ability scores by 1. As normal, you can't increase one of your ability scores above 20 using this feature."
+			]
+		},
+		{
+			"name": "Frightful Crest",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 9,
+			"entries": [
+				"Starting at 9th level, a creature branded with your ruincrest can't become invisible.",
+                "In addition, when you mark a creature with your ruincrest, you may have it make a Wisdom saving throw, frightening it for 1 minute on a failed save. It can repeat the saving throw at the end of each of its turns, ending the effect on a failed save. If a creature makes a successful save or the condition ends for it, that creature can't be frightened with this feature for the next 24 hours. You can use this feature a number of times equal to 1 plus your Constitution modifier (a minimum of twice). You regain expended uses when you finish a long rest."
+			]
+		},
+        {
+			"name": "Arbiter Ascension",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 3,
+			"level": 10,
+			"entries": [
+				"At 10th level, you gain a feature from your Arbiter's Ascension"
+			]
+		},
+		{
+			"name": "Unyielding Preeminence (2)",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 5,
+			"level": 11,
+			"entries": [
+				"Beginning at 11nd level, your Marked Penalty is reduced by 2 as long as you are missing at least half of your hit points."
+			]
+		},
+        {
+			"name": "Ability Score Improvement",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 12,
+			"entries": [
+				"When you reach 12th level you can increase one ability score of your choice by 2, or two ability scores by 1. As normal, you can't increase one of your ability scores above 20 using this feature."
+			]
+		},
+        {
+			"name": "Martial Acumen (2)",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 13,
+			"entries": [
+				"Upon reaching 13th level, you gain an additional Martial Acumen."
+			]
+		},
+        {
+			"name": "Greater Martial Acumen",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 13,
+			"entries": [
+				"Upon reaching 13th level, your chosens acumens grant you extra features."
+			]
+		},
+        {
+			"name": "Arbiter Ascension",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 3,
+			"level": 14,
+			"entries": [
+				"At 14th level, you gain a feature from your Arbiter's Ascension"
+			]
+		},
+        {
+			"name": "Seeker's Sanction",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 3,
+			"level": 15,
+			"entries": [
+				"At 15th level, whenever a creature that's branded with your crest teleports to another plane of existence, the crest stays on it for 24 more hours and you can mark another creature with your ruincrest. Until the 24 hours pass or the creature branded with it dies or removes the crest, the original crest doesn't count against the number of ruincrests you have.",
+                "Whenever a creature marked with your ruincrest teleports to another plane of existence, you can use your reaction to chase after it and teleport to the new plane of existence. If you do, you're shunted back to the plane of existence you were on when you first marked it with your ruincrest, in the space you originally occupied before you teleported, or the nearest unoccupied space if that space is already occupied, when any of the following occur:",
+                {
+					"type": "list",
+					"items": [
+                        "The branded creature dies or 24 hours pass.",
+                        "You drop to 0 hit points or are incapacitated."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ability Score Improvement",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 16,
+			"entries": [
+				"When you reach 16th level you can increase one ability score of your choice by 2, or two ability scores by 1. As normal, you can't increase one of your ability scores above 20 using this feature."
+			]
+		},
+        {
+			"name": "Otherworldly Vengeance",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 17,
+			"entries": [
+				"Starting at 17th level, you have a second instance of extra attack (for a total of three attacks, or four if abyssal elegy or blood dance is active for you) while you are missing at least half of your hit points."
+			]
+		},
+        {
+			"name": "Arbiter Ascension",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 3,
+			"level": 18,
+			"entries": [
+				"At 18th level, you gain a feature from your Arbiter's Ascension"
+			]
+		},
+        {
+			"name": "Ability Score Improvement",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 6,
+			"level": 19,
+			"entries": [
+				"When you reach 19th level you can increase one ability score of your choice by 2, or two ability scores by 1. As normal, you can't increase one of your ability scores above 20 using this feature."
+			]
+		},
+        {
+			"name": "Calamitous Warstorm",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 3,
+			"level": 20,
+			"entries": [
+				"At 20th level, whenever you kill a creature marked with your ruincrest and it's your turn, you can brand a creature you can see within 30 feet of you with a ruincrest as a free action, take an additional Attack (one weapon attack only) action this turn, and you gain 15 extra feet of of movement speed until the end of the turn."
+			]
+		}
+	],
+	"subclass":[
+		{
+			"name": "Blood Voivode",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"shortName": "Blood",
+			"subclassFeatures": [
+				"Deathleech|Arbiter|AvCA|Blood Voivode|AvCA|1|AvCA",
+				"Crimson Sacraments|Arbiter|AvCA|Blood Voivode|AvCA|3|AvCA",
+				"Vampiric Impetus|Arbiter|AvCA|Blood Voivode|AvCA|6|AvCA",
+				"Undying Fortitude|Arbiter|AvCA|Blood Voivode|AvCA|10|AvCA",
+				"Crimson Arrogation|Arbiter|AvCA|Blood Voivode|AvCA|14|AvCA",
+				"Bloodscarred Sovereignty|Arbiter|AvCA|Blood Voivode|AvCA|18|AvCA"
+			]
+		},
+		{
+			"name": "Entropic Herrscher",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"shortName": "Herrscher",
+			"subclassFeatures": [
+				"Subspace Armaments|Arbiter|AvCA|Herrscher|AvCA|1|AvCA",
+				"Void Neophyte|Arbiter|AvCA|Herrscher|AvCA|3|AvCA",
+				"Astral Grace|Arbiter|AvCA|Herrscher|AvCA|6|AvCA",
+				"Temporal Distortion|Arbiter|AvCA|Herrscher|AvCA|10|AvCA",
+				"Sovereign's Grace|Arbiter|AvCA|Herrscher|AvCA|14|AvCA",
+				"Sundering Herald|Arbiter|AvCA|Herrscher|AvCA|18|AvCA"
+			]
+		},
+		{
+			"name": "Hand of Arrogation",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"shortName": "Hand of Arrogation",
+			"subclassFeatures": [
+				"Bonded Weapon|Arbiter|AvCA|Hand of Arrogation|AvCA|1|AvCA",
+				"Psionic Control|Arbiter|AvCA|Hand of Arrogation|AvCA|3|AvCA",
+				"Warded Mind|Arbiter|AvCA|Hand of Arrogation|AvCA|6|AvCA",
+				"Second Contact|Arbiter|AvCA|Hand of Arrogation|AvCA|10|AvCA",
+				"Arrogation's Wrath|Arbiter|AvCA|Hand of Arrogation|AvCA|14|AvCA",
+				"The Usurper's Indignation|Arbiter|AvCA|Hand of Arrogation|AvCA|18|AvCA"
+			]
+		},
+		{
+			"name": "Prophet's Retainer",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"shortName": "Prophet's Retainer",
+			"subclassFeatures": [
+				"Spellcasting|Arbiter|AvCA|Prophet's Retainer|AvCA|1|AvCA",
+				"Prophet's Anointment|Arbiter|AvCA|Prophet's Retainer|AvCA|3|AvCA",
+				"Prophet's Fangs|Arbiter|AvCA|Prophet's Retainer|AvCA|6|AvCA",
+				"Emissary of Authority|Arbiter|AvCA|Prophet's Retainer|AvCA|10|AvCA",
+				"Arcane Adeptus|Arbiter|AvCA|Prophet's Retainer|AvCA|14|AvCA",
+				"Agent of Sovereigns|Arbiter|AvCA|Prophet's Retainer|AvCA|18|AvCA"
+			]
+		},
+		{
+			"name": "Sovereign of Tides",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"shortName": "Sovereign of Tides",
+			"subclassFeatures": [
+				"Benthic Ascent|Arbiter|AvCA|Sovereign of Tides|AvCA|1|AvCA",
+				"Unbreakable Predator|Arbiter|AvCA|Sovereign of Tides|AvCA|3|AvCA",
+				"Deep-Dweller's Heart|Arbiter|AvCA|Sovereign of Tides|AvCA|6|AvCA",
+				"Elegy of the Arbiter|Arbiter|AvCA|Sovereign of Tides|AvCA|10|AvCA",
+				"Aquatic Tyrant|Arbiter|AvCA|Sovereign of Tides|AvCA|14|AvCA",
+				"Sovereign's Respite|Arbiter|AvCA|Sovereign of Tides|AvCA|18|AvCA"
+			]
+		},
+		{
+			"name": "Vermillion Knight",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"shortName": "Vermillion Knight",
+			"subclassFeatures": [
+				"Searing Strikes|Arbiter|AvCA|Vermillion Knight|AvCA|1|AvCA",
+				"Vermillion Assault|Arbiter|AvCA|Vermillion Knight|AvCA|3|AvCA",
+				"Crimson Arbiter|Arbiter|AvCA|Vermillion Knight|AvCA|6|AvCA",
+				"Unyielding Savagery|Arbiter|AvCA|Vermillion Knight|AvCA|10|AvCA",
+				"Alpha Executioner|Arbiter|AvCA|Vermillion Knight|AvCA|14|AvCA",
+				"Flaming Crescendo|Arbiter|AvCA|Vermillion Knight|AvCA|18|AvCA"
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"name": "Blood Voivode",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 7,
+			"subclassShortName": "Blood Voivode",
+			"subclassSource": "AvCA",
+			"level": 1,
+			"header": 1,
+			"entries": [
+				"Blood voivodes are unshakable juggernauts, able to leech the life force of those they defeat and sacrifice their own blood to cast spells or perform extraordinary feats. Often demonized and labeled heralds of destruction, it is up to you to prove whether or not you're a portent of the evils that are rumored to follow you."
+			]
+		},
+		{
+			"name": "Deathleech",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 7,
+			"subclassShortName": "Blood Voivode",
+			"subclassSource": "AvCA",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				"Starting at 1st level when you first choose this ascension, whenever you kill a creature that is branded with your ruincrest, you regain a number of hit points equal to 1d4 + your proficiency bonus. The amount of hit points regained increases as you gain more levels in this class, as shown in the table below.",
+				{
+					"type": "table",
+					"colLabels": [
+						"Level",
+						"HP Regained"
+					],
+					"colStyles": [
+						"col-3 text-center",
+						"col-3 text-center"
+					],
+					"rows": [
+						[
+							"1st - 5th",
+							"1d4"
+						],
+						[
+							"6th - 10th",
+							"2d4"
+						],
+						[
+							"11th - 15th",
+							"3d4"
+						],
+						[
+							"16th - 20th",
+							"4d4"
+						]
+					]
+				}
+				
+			]
+		},
+		{
+			"name": "Crimson Sacraments",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 7,
+			"subclassShortName": "Blood Voivode",
+			"subclassSource": "AvCA",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"Crimson sacraments are rituals that blood voivodes perform to enact superhuman feats and acts beyond the capabilities of spellcasters, at the cost of their own vitality. While some sacraments are acts that are difficult for mortals to achieve, others are violent acts that send shivers through onlookers, or merely replicate the effects of spells.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Sacraments|Arbiter|AvCA|Blood Voivode|AvCA|3|AvCA"
+
+				},
+				"When you reach 3rd level, you learn two sacraments of your choice. You learn more sacraments as you gain more levels as an arbiter, as indicated by blood voivode features that you gain at higher levels. The list of sacraments you can learn at 3rd level are detailed at the end of this feature's description.",
+				"Crimson sacraments can only be used so many times per rest. The number of times you can perform a sacrament, the number of hit points needed to use it, and whether or not it requires a free hand to use is noted in parenthesis before its description. In addition, a sacrament with an asterisk doesn't subtract your marked penalty to attack and damage rolls you make for it.",
+				"You can't expend hit points to perform a sacrament if you have hit points less than half the maximum result you can roll to determine how many hit points are lost. For example, you can't perform sangrite cleaver if you have less than 6 hit points. As such, your hit points can't be reduced to less than 1 performing a sacrament, and temporary hit points can't be expended to perform sacraments. You regain expended uses after finishing a short rest.",
+				{
+					"type": "list",
+					"style": "list-hang",
+					"columns": 1,
+					"name": "List of Sacraments:",
+					"items": [
+						"{@optfeature Blood Surge|AvCA}",
+						"{@optfeature Crimson Claw|AvCA}",
+						"{@optfeature Sangrite Cleaver|AvCA}",
+						"{@optfeature Scarlet Spear|AvCA}"
+					]
+				}
+				
+			
+
+			]
+		},
+		{
+			"name": "Sacraments",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 7,
+			"subclassShortName": "Blood Voivode",
+			"subclassSource": "AvCA",
+			"level": 3,
+			"header": 2,
+			"entries": []
+		},
+		{
+			"name": "",
+			"source": "AvCA",
+			"className": "Arbiter",
+			"classSource": "AvCA",
+			"page": 7,
+			"subclassShortName": "Blood Voivode",
+			"subclassSource": "AvCA",
+			"level": 1,
+			"header": 2,
+			"entries": [
+				""
+			]
+		}
+		
+	]	
+}
